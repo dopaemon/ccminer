@@ -2059,7 +2059,8 @@ static void *miner_thread(void *userdata)
 
 		} else if (opt_algo == ALGO_EQUIHASH) {
 
-			nonceptr[2] = rand() << 24 | rand() << 8 | thr_id;
+			//nonceptr[2] = rand() << 24 | rand() << 8 | thr_id;
+			nonceptr[2] |= ( thr_id ) + ((rand()*4) << 24);
 	
 		} else if (opt_algo == ALGO_WILDKECCAK) {
 			//nonceptr[1] += 1;
