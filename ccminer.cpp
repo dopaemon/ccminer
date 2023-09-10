@@ -2737,7 +2737,7 @@ wait_stratum_url:
 			pthread_mutex_unlock(&g_work_lock);
 			restart_threads();
 
-			if (!stratum_connect(&stratum, pool->url) ||
+			if (!stratum_connect(&stratum, stratum.url) ||
 			    !stratum_subscribe(&stratum) ||
 			    !stratum_authorize(&stratum, pool->user, pool->pass))
 			{
