@@ -10,7 +10,7 @@ rm -f Makefile.in
 rm -f config.status
 ./autogen.sh || echo done
 
-#CFLAGS="-O3" ./configure
-./configure.sh
+CFLAGS="-O3" ./configure
+# ./configure.sh
 
-make
+CXX=clang++ CC=clang make

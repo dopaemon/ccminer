@@ -1,60 +1,54 @@
 /* ccminer-config.h.  Generated from ccminer-config.h.in by configure.  */
 /* ccminer-config.h.in.  Generated from configure.ac by autoheader.  */
 
-/* Define to one of `_getb67', `GETB67', `getb67' for Cray-2 and Cray-YMP
-   systems. This function is required for `alloca.c' support on those systems.
-   */
-/* #undef CRAY_STACKSEG_END */
-
-/* Define to 1 if using `alloca.c'. */
+/* Define to 1 if using 'alloca.c'. */
 /* #undef C_ALLOCA */
 
-/* Define to 1 if you have `alloca', as a function or macro. */
+/* Define to 1 if you have 'alloca', as a function or macro. */
 #define HAVE_ALLOCA 1
 
-/* Define to 1 if you have <alloca.h> and it should be used (not on Ultrix).
-   */
+/* Define to 1 if <alloca.h> works. */
 #define HAVE_ALLOCA_H 1
 
-/* Define to 1 if you have the declaration of `be32dec', and to 0 if you
+/* Define to 1 if you have the declaration of 'be32dec', and to 0 if you
    don't. */
 #define HAVE_DECL_BE32DEC 0
 
-/* Define to 1 if you have the declaration of `be32enc', and to 0 if you
+/* Define to 1 if you have the declaration of 'be32enc', and to 0 if you
    don't. */
 #define HAVE_DECL_BE32ENC 0
 
-/* Define to 1 if you have the declaration of `le32dec', and to 0 if you
+/* Define to 1 if you have the declaration of 'le32dec', and to 0 if you
    don't. */
 #define HAVE_DECL_LE32DEC 0
 
-/* Define to 1 if you have the declaration of `le32enc', and to 0 if you
+/* Define to 1 if you have the declaration of 'le32enc', and to 0 if you
    don't. */
 #define HAVE_DECL_LE32ENC 0
 
-/* Define to 1 if you have the `getopt_long' function. */
+/* Define to 1 if you have the 'getopt_long' function. */
 #define HAVE_GETOPT_LONG 1
 
 /* Define to 1 if you have the <inttypes.h> header file. */
 #define HAVE_INTTYPES_H 1
 
-/* Define to 1 if you have the `crypto' library (-lcrypto). */
+/* Define to 1 if you have the 'crypto' library (-lcrypto). */
 #define HAVE_LIBCRYPTO 1
 
 /* Define to 1 if you have a functional curl library. */
 #define HAVE_LIBCURL 1
 
-/* Define to 1 if you have the `ssl' library (-lssl). */
+/* Define to 1 if you have the 'ssl' library (-lssl). */
 #define HAVE_LIBSSL 1
 
-/* Define to 1 if you have the `z' library (-lz). */
+/* Define to 1 if you have the 'z' library (-lz). */
 #define HAVE_LIBZ 1
-
-/* Define to 1 if you have the <memory.h> header file. */
-#define HAVE_MEMORY_H 1
 
 /* Define to 1 if you have the <stdint.h> header file. */
 #define HAVE_STDINT_H 1
+
+/* Define to 1 if you have the <stdio.h> header file. */
+#define HAVE_STDIO_H 1
 
 /* Define to 1 if you have the <stdlib.h> header file. */
 #define HAVE_STDLIB_H 1
@@ -69,7 +63,7 @@
 #define HAVE_SYSLOG_H 1
 
 /* Define to 1 if you have the <sys/endian.h> header file. */
-/* #undef HAVE_SYS_ENDIAN_H */
+#define HAVE_SYS_ENDIAN_H 1
 
 /* Define to 1 if you have the <sys/param.h> header file. */
 #define HAVE_SYS_PARAM_H 1
@@ -90,7 +84,7 @@
 #define LIBCURL_FEATURE_ASYNCHDNS 1
 
 /* Defined if libcurl supports IDN */
-#define LIBCURL_FEATURE_IDN 1
+/* #undef LIBCURL_FEATURE_IDN */
 
 /* Defined if libcurl supports IPv6 */
 #define LIBCURL_FEATURE_IPV6 1
@@ -132,7 +126,7 @@
 #define LIBCURL_PROTOCOL_IMAP 1
 
 /* Defined if libcurl supports LDAP */
-#define LIBCURL_PROTOCOL_LDAP 1
+/* #undef LIBCURL_PROTOCOL_LDAP */
 
 /* Defined if libcurl supports POP3 */
 #define LIBCURL_PROTOCOL_POP3 1
@@ -178,7 +172,9 @@
 	STACK_DIRECTION = 0 => direction of growth unknown */
 /* #undef STACK_DIRECTION */
 
-/* Define to 1 if you have the ANSI C header files. */
+/* Define to 1 if all of the C89 standard headers exist (not just the ones
+   required in a freestanding environment). This macro is provided for
+   backward compatibility; new code need not use it. */
 #define STDC_HEADERS 1
 
 /* Version number of package */
@@ -187,5 +183,5 @@
 /* Define curl_free() as free() if our version of curl lacks curl_free. */
 /* #undef curl_free */
 
-/* Define to `unsigned int' if <sys/types.h> does not define. */
+/* Define as 'unsigned int' if <stddef.h> doesn't define. */
 /* #undef size_t */

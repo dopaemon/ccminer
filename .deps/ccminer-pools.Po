@@ -1,5 +1,5 @@
-equi/ccminer-equi-stratum.o: equi/equi-stratum.cpp \
-  /data/data/com.termux/files/usr/include/c++/v1/errno.h \
+ccminer-pools.o: pools.cpp \
+  /data/data/com.termux/files/usr/include/c++/v1/stdio.h \
   /data/data/com.termux/files/usr/include/c++/v1/__config \
   /data/data/com.termux/files/usr/include/c++/v1/__config_site \
   /data/data/com.termux/files/usr/include/features.h \
@@ -8,13 +8,8 @@ equi/ccminer-equi-stratum.o: equi/equi-stratum.cpp \
   /data/data/com.termux/files/usr/include/android/api-level.h \
   /data/data/com.termux/files/usr/include/bits/get_device_api_level_inlines.h \
   /data/data/com.termux/files/usr/include/android/ndk-version.h \
-  /data/data/com.termux/files/usr/include/errno.h \
-  /data/data/com.termux/files/usr/include/linux/errno.h \
-  /data/data/com.termux/files/usr/include/aarch64-linux-android/asm/errno.h \
-  /data/data/com.termux/files/usr/include/asm-generic/errno.h \
-  /data/data/com.termux/files/usr/include/asm-generic/errno-base.h \
-  /data/data/com.termux/files/usr/include/c++/v1/string.h \
-  /data/data/com.termux/files/usr/include/string.h \
+  /data/data/com.termux/files/usr/include/stdio.h \
+  /data/data/com.termux/files/usr/include/sys/types.h \
   /data/data/com.termux/files/usr/include/c++/v1/stddef.h \
   /data/data/com.termux/files/usr/lib/clang/19/include/stddef.h \
   /data/data/com.termux/files/usr/lib/clang/19/include/__stddef_header_macro.h \
@@ -25,9 +20,6 @@ equi/ccminer-equi-stratum.o: equi/equi-stratum.cpp \
   /data/data/com.termux/files/usr/lib/clang/19/include/__stddef_nullptr_t.h \
   /data/data/com.termux/files/usr/lib/clang/19/include/__stddef_max_align_t.h \
   /data/data/com.termux/files/usr/lib/clang/19/include/__stddef_offsetof.h \
-  /data/data/com.termux/files/usr/include/xlocale.h \
-  /data/data/com.termux/files/usr/include/bits/strcasecmp.h \
-  /data/data/com.termux/files/usr/include/sys/types.h \
   /data/data/com.termux/files/usr/include/c++/v1/stdint.h \
   /data/data/com.termux/files/usr/lib/clang/19/include/stdint.h \
   /data/data/com.termux/files/usr/include/stdint.h \
@@ -45,7 +37,30 @@ equi/ccminer-equi-stratum.o: equi/equi-stratum.cpp \
   /data/data/com.termux/files/usr/include/aarch64-linux-android/asm/posix_types.h \
   /data/data/com.termux/files/usr/include/asm-generic/posix_types.h \
   /data/data/com.termux/files/usr/include/bits/pthread_types.h \
+  /data/data/com.termux/files/usr/lib/clang/19/include/stdarg.h \
+  /data/data/com.termux/files/usr/lib/clang/19/include/__stdarg_header_macro.h \
+  /data/data/com.termux/files/usr/lib/clang/19/include/__stdarg___gnuc_va_list.h \
+  /data/data/com.termux/files/usr/lib/clang/19/include/__stdarg_va_list.h \
+  /data/data/com.termux/files/usr/lib/clang/19/include/__stdarg_va_arg.h \
+  /data/data/com.termux/files/usr/lib/clang/19/include/__stdarg___va_copy.h \
+  /data/data/com.termux/files/usr/lib/clang/19/include/__stdarg_va_copy.h \
+  /data/data/com.termux/files/usr/include/c++/v1/string.h \
+  /data/data/com.termux/files/usr/include/string.h \
+  /data/data/com.termux/files/usr/include/xlocale.h \
+  /data/data/com.termux/files/usr/include/bits/strcasecmp.h \
   /data/data/com.termux/files/usr/include/strings.h \
+  /data/data/com.termux/files/usr/include/aarch64-linux-android/asm/fcntl.h \
+  /data/data/com.termux/files/usr/include/asm-generic/fcntl.h \
+  /data/data/com.termux/files/usr/include/bits/flock64.h \
+  /data/data/com.termux/files/usr/include/bits/flock.h \
+  /data/data/com.termux/files/usr/include/bits/seek_constants.h \
+  /data/data/com.termux/files/usr/include/c++/v1/stdlib.h \
+  /data/data/com.termux/files/usr/include/stdlib.h \
+  /data/data/com.termux/files/usr/include/alloca.h \
+  /data/data/com.termux/files/usr/include/bits/wait.h \
+  /data/data/com.termux/files/usr/include/linux/wait.h \
+  /data/data/com.termux/files/usr/include/malloc.h \
+  /data/data/com.termux/files/usr/include/android/legacy_stdlib_inlines.h \
   /data/data/com.termux/files/usr/include/unistd.h \
   /data/data/com.termux/files/usr/include/sys/select.h \
   /data/data/com.termux/files/usr/include/linux/time.h \
@@ -75,7 +90,6 @@ equi/ccminer-equi-stratum.o: equi/equi-stratum.cpp \
   /data/data/com.termux/files/usr/include/bits/getopt.h \
   /data/data/com.termux/files/usr/include/bits/ioctl.h \
   /data/data/com.termux/files/usr/include/bits/lockf.h \
-  /data/data/com.termux/files/usr/include/bits/seek_constants.h \
   /data/data/com.termux/files/usr/include/bits/sysconf.h \
   /data/data/com.termux/files/usr/include/android/legacy_unistd_inlines.h \
   /data/data/com.termux/files/usr/include/bits/swab.h miner.h \
@@ -91,26 +105,6 @@ equi/ccminer-equi-stratum.o: equi/equi-stratum.cpp \
   /data/data/com.termux/files/usr/include/linux/sched.h \
   /data/data/com.termux/files/usr/include/time.h \
   /data/data/com.termux/files/usr/include/jansson.h \
-  /data/data/com.termux/files/usr/lib/clang/19/include/stdarg.h \
-  /data/data/com.termux/files/usr/lib/clang/19/include/__stdarg_header_macro.h \
-  /data/data/com.termux/files/usr/lib/clang/19/include/__stdarg___gnuc_va_list.h \
-  /data/data/com.termux/files/usr/lib/clang/19/include/__stdarg_va_list.h \
-  /data/data/com.termux/files/usr/lib/clang/19/include/__stdarg_va_arg.h \
-  /data/data/com.termux/files/usr/lib/clang/19/include/__stdarg___va_copy.h \
-  /data/data/com.termux/files/usr/lib/clang/19/include/__stdarg_va_copy.h \
-  /data/data/com.termux/files/usr/include/c++/v1/stdio.h \
-  /data/data/com.termux/files/usr/include/stdio.h \
-  /data/data/com.termux/files/usr/include/aarch64-linux-android/asm/fcntl.h \
-  /data/data/com.termux/files/usr/include/asm-generic/fcntl.h \
-  /data/data/com.termux/files/usr/include/bits/flock64.h \
-  /data/data/com.termux/files/usr/include/bits/flock.h \
-  /data/data/com.termux/files/usr/include/c++/v1/stdlib.h \
-  /data/data/com.termux/files/usr/include/stdlib.h \
-  /data/data/com.termux/files/usr/include/alloca.h \
-  /data/data/com.termux/files/usr/include/bits/wait.h \
-  /data/data/com.termux/files/usr/include/linux/wait.h \
-  /data/data/com.termux/files/usr/include/malloc.h \
-  /data/data/com.termux/files/usr/include/android/legacy_stdlib_inlines.h \
   /data/data/com.termux/files/usr/include/jansson_config.h \
   /data/data/com.termux/files/usr/include/curl/curl.h \
   /data/data/com.termux/files/usr/include/curl/curlver.h \
@@ -134,8 +128,8 @@ equi/ccminer-equi-stratum.o: equi/equi-stratum.cpp \
   /data/data/com.termux/files/usr/include/libgen.h \
   /data/data/com.termux/files/usr/include/syslog.h \
   /data/data/com.termux/files/usr/include/sys/endian.h \
-  /data/data/com.termux/files/usr/include/getopt.h equi/equihash.h
-/data/data/com.termux/files/usr/include/c++/v1/errno.h:
+  /data/data/com.termux/files/usr/include/getopt.h algos.h
+/data/data/com.termux/files/usr/include/c++/v1/stdio.h:
 /data/data/com.termux/files/usr/include/c++/v1/__config:
 /data/data/com.termux/files/usr/include/c++/v1/__config_site:
 /data/data/com.termux/files/usr/include/features.h:
@@ -144,13 +138,8 @@ equi/ccminer-equi-stratum.o: equi/equi-stratum.cpp \
 /data/data/com.termux/files/usr/include/android/api-level.h:
 /data/data/com.termux/files/usr/include/bits/get_device_api_level_inlines.h:
 /data/data/com.termux/files/usr/include/android/ndk-version.h:
-/data/data/com.termux/files/usr/include/errno.h:
-/data/data/com.termux/files/usr/include/linux/errno.h:
-/data/data/com.termux/files/usr/include/aarch64-linux-android/asm/errno.h:
-/data/data/com.termux/files/usr/include/asm-generic/errno.h:
-/data/data/com.termux/files/usr/include/asm-generic/errno-base.h:
-/data/data/com.termux/files/usr/include/c++/v1/string.h:
-/data/data/com.termux/files/usr/include/string.h:
+/data/data/com.termux/files/usr/include/stdio.h:
+/data/data/com.termux/files/usr/include/sys/types.h:
 /data/data/com.termux/files/usr/include/c++/v1/stddef.h:
 /data/data/com.termux/files/usr/lib/clang/19/include/stddef.h:
 /data/data/com.termux/files/usr/lib/clang/19/include/__stddef_header_macro.h:
@@ -161,9 +150,6 @@ equi/ccminer-equi-stratum.o: equi/equi-stratum.cpp \
 /data/data/com.termux/files/usr/lib/clang/19/include/__stddef_nullptr_t.h:
 /data/data/com.termux/files/usr/lib/clang/19/include/__stddef_max_align_t.h:
 /data/data/com.termux/files/usr/lib/clang/19/include/__stddef_offsetof.h:
-/data/data/com.termux/files/usr/include/xlocale.h:
-/data/data/com.termux/files/usr/include/bits/strcasecmp.h:
-/data/data/com.termux/files/usr/include/sys/types.h:
 /data/data/com.termux/files/usr/include/c++/v1/stdint.h:
 /data/data/com.termux/files/usr/lib/clang/19/include/stdint.h:
 /data/data/com.termux/files/usr/include/stdint.h:
@@ -181,7 +167,30 @@ equi/ccminer-equi-stratum.o: equi/equi-stratum.cpp \
 /data/data/com.termux/files/usr/include/aarch64-linux-android/asm/posix_types.h:
 /data/data/com.termux/files/usr/include/asm-generic/posix_types.h:
 /data/data/com.termux/files/usr/include/bits/pthread_types.h:
+/data/data/com.termux/files/usr/lib/clang/19/include/stdarg.h:
+/data/data/com.termux/files/usr/lib/clang/19/include/__stdarg_header_macro.h:
+/data/data/com.termux/files/usr/lib/clang/19/include/__stdarg___gnuc_va_list.h:
+/data/data/com.termux/files/usr/lib/clang/19/include/__stdarg_va_list.h:
+/data/data/com.termux/files/usr/lib/clang/19/include/__stdarg_va_arg.h:
+/data/data/com.termux/files/usr/lib/clang/19/include/__stdarg___va_copy.h:
+/data/data/com.termux/files/usr/lib/clang/19/include/__stdarg_va_copy.h:
+/data/data/com.termux/files/usr/include/c++/v1/string.h:
+/data/data/com.termux/files/usr/include/string.h:
+/data/data/com.termux/files/usr/include/xlocale.h:
+/data/data/com.termux/files/usr/include/bits/strcasecmp.h:
 /data/data/com.termux/files/usr/include/strings.h:
+/data/data/com.termux/files/usr/include/aarch64-linux-android/asm/fcntl.h:
+/data/data/com.termux/files/usr/include/asm-generic/fcntl.h:
+/data/data/com.termux/files/usr/include/bits/flock64.h:
+/data/data/com.termux/files/usr/include/bits/flock.h:
+/data/data/com.termux/files/usr/include/bits/seek_constants.h:
+/data/data/com.termux/files/usr/include/c++/v1/stdlib.h:
+/data/data/com.termux/files/usr/include/stdlib.h:
+/data/data/com.termux/files/usr/include/alloca.h:
+/data/data/com.termux/files/usr/include/bits/wait.h:
+/data/data/com.termux/files/usr/include/linux/wait.h:
+/data/data/com.termux/files/usr/include/malloc.h:
+/data/data/com.termux/files/usr/include/android/legacy_stdlib_inlines.h:
 /data/data/com.termux/files/usr/include/unistd.h:
 /data/data/com.termux/files/usr/include/sys/select.h:
 /data/data/com.termux/files/usr/include/linux/time.h:
@@ -211,7 +220,6 @@ equi/ccminer-equi-stratum.o: equi/equi-stratum.cpp \
 /data/data/com.termux/files/usr/include/bits/getopt.h:
 /data/data/com.termux/files/usr/include/bits/ioctl.h:
 /data/data/com.termux/files/usr/include/bits/lockf.h:
-/data/data/com.termux/files/usr/include/bits/seek_constants.h:
 /data/data/com.termux/files/usr/include/bits/sysconf.h:
 /data/data/com.termux/files/usr/include/android/legacy_unistd_inlines.h:
 /data/data/com.termux/files/usr/include/bits/swab.h:
@@ -228,26 +236,6 @@ ccminer-config.h:
 /data/data/com.termux/files/usr/include/linux/sched.h:
 /data/data/com.termux/files/usr/include/time.h:
 /data/data/com.termux/files/usr/include/jansson.h:
-/data/data/com.termux/files/usr/lib/clang/19/include/stdarg.h:
-/data/data/com.termux/files/usr/lib/clang/19/include/__stdarg_header_macro.h:
-/data/data/com.termux/files/usr/lib/clang/19/include/__stdarg___gnuc_va_list.h:
-/data/data/com.termux/files/usr/lib/clang/19/include/__stdarg_va_list.h:
-/data/data/com.termux/files/usr/lib/clang/19/include/__stdarg_va_arg.h:
-/data/data/com.termux/files/usr/lib/clang/19/include/__stdarg___va_copy.h:
-/data/data/com.termux/files/usr/lib/clang/19/include/__stdarg_va_copy.h:
-/data/data/com.termux/files/usr/include/c++/v1/stdio.h:
-/data/data/com.termux/files/usr/include/stdio.h:
-/data/data/com.termux/files/usr/include/aarch64-linux-android/asm/fcntl.h:
-/data/data/com.termux/files/usr/include/asm-generic/fcntl.h:
-/data/data/com.termux/files/usr/include/bits/flock64.h:
-/data/data/com.termux/files/usr/include/bits/flock.h:
-/data/data/com.termux/files/usr/include/c++/v1/stdlib.h:
-/data/data/com.termux/files/usr/include/stdlib.h:
-/data/data/com.termux/files/usr/include/alloca.h:
-/data/data/com.termux/files/usr/include/bits/wait.h:
-/data/data/com.termux/files/usr/include/linux/wait.h:
-/data/data/com.termux/files/usr/include/malloc.h:
-/data/data/com.termux/files/usr/include/android/legacy_stdlib_inlines.h:
 /data/data/com.termux/files/usr/include/jansson_config.h:
 /data/data/com.termux/files/usr/include/curl/curl.h:
 /data/data/com.termux/files/usr/include/curl/curlver.h:
@@ -273,4 +261,4 @@ compat.h:
 /data/data/com.termux/files/usr/include/syslog.h:
 /data/data/com.termux/files/usr/include/sys/endian.h:
 /data/data/com.termux/files/usr/include/getopt.h:
-equi/equihash.h:
+algos.h:
