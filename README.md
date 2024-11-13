@@ -8,16 +8,16 @@ Proceed with installation, configuration & compilation:
 
 1. Installing clang and dependencies:
 ```
-yes | pkg update && pkg upgrade
-yes | pkg install libjansson build-essential clang binutils git
+pkg update && pkg upgrade -y
+pkg install libjansson build-essential clang binutils git tsu nano -y
 ```
 
 2. Fix environment & clone repo:
 ```
 cp /data/data/com.termux/files/usr/include/linux/sysctl.h /data/data/com.termux/files/usr/include/sys
-git clone https://github.com/Darktron/ccminer.git
+git clone https://github.com/dopaemon/ccminer.git
 cd ccminer
-chmod +x build.sh configure.sh autogen.sh start.sh
+chmod +x *.sh
 ```
 
 3. Edit Arch & Cores:
