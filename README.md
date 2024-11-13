@@ -9,7 +9,7 @@ Proceed with installation, configuration & compilation:
 1. Installing clang and dependencies:
 ```
 pkg update && pkg upgrade -y
-pkg install libjansson build-essential clang binutils git tsu nano -y
+pkg install libjansson build-essential clang binutils git tsu nano tmux -y
 ```
 
 2. Fix environment & clone repo:
