@@ -18,6 +18,7 @@
 #include <string>
 #include <string.h>
 #include <utility>
+#include <endian.h>
 #include <vector>
 
 #ifdef __APPLE__
