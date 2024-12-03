@@ -1009,7 +1009,7 @@ static void mcast()
 
 	count = 0;
 	while (42) {
-		usleep(500000);
+		usleep(250000);
 
 		count++;
 		came_from_siz = sizeof(came_from);
@@ -1139,7 +1139,7 @@ static void api()
 	apisock = (SOCKETTYPE*) calloc(1, sizeof(*apisock));
 	*apisock = INVSOCK;
 
-	usleep(500000);
+	usleep(250000);
 
 	*apisock = socket(AF_INET, SOCK_STREAM, 0);
 	if (*apisock == INVSOCK) {
@@ -1187,7 +1187,7 @@ static void api()
 						port, (uint32_t) port+1);
 				port++;
 				serv.sin_port = htons(port);
-				usleep(500000);
+				usleep(250000);
 			} else {
 				if (!opt_quiet || opt_debug)
 					applog(LOG_WARNING, "API bind to port %u failed - trying again in 20sec",

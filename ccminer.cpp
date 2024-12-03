@@ -2103,7 +2103,7 @@ static void *miner_thread(void *userdata)
 		else if (opt_algo == ALGO_DECRED) nodata_check_oft = 4; // testnet ver is 0
 		else nodata_check_oft = 0;
 		if (have_stratum && work.data[nodata_check_oft] == 0 && !opt_benchmark) {
-			usleep(500000);
+			usleep(250000);
 			if (!thr_id) pools[cur_pooln].wait_time += 1;
 			gpulog(LOG_DEBUG, thr_id, "no data");
 			continue;
@@ -2130,7 +2130,7 @@ static void *miner_thread(void *userdata)
 					if (!thr_id) pools[cur_pooln].wait_time += 1;
 					pool_is_switching = false;
 				}
-				usleep(500000);
+				usleep(250000);
 				continue;
 			}
 
@@ -2160,7 +2160,7 @@ static void *miner_thread(void *userdata)
 			int remain = (int)(opt_time_limit - passed);
 			if (remain < 0)  {
 				if (thr_id != 0) {
-					usleep(500000); continue;
+					usleep(250000); continue;
 				}
 				if (num_pools > 1 && pools[cur_pooln].time_limit > 0) {
 					if (!pool_is_switching) {
@@ -2173,7 +2173,7 @@ static void *miner_thread(void *userdata)
 						if (!thr_id) pools[cur_pooln].wait_time += 1;
 						pool_is_switching = false;
 					}
-					usleep(500000);
+					usleep(250000);
 					continue;
 				}
 				app_exit_code = EXIT_CODE_TIME_LIMIT;
@@ -2199,7 +2199,7 @@ static void *miner_thread(void *userdata)
 			if (shares >= opt_shares_limit) {
 				int passed = (int)(time(NULL) - firstwork_time);
 				if (thr_id != 0) {
-					usleep(500000); continue;
+					usleep(250000); continue;
 				}
 				if (num_pools > 1 && pools[cur_pooln].shares_limit > 0) {
 					if (!pool_is_switching) {
@@ -2212,7 +2212,7 @@ static void *miner_thread(void *userdata)
 						if (!thr_id) pools[cur_pooln].wait_time += 1;
 						pool_is_switching = false;
 					}
-					usleep(500000);
+					usleep(250000);
 					continue;
 				}
 				abort_flag = true;

@@ -215,7 +215,7 @@ extern "C" int scanhash_equihash(int thr_id, struct work *work, uint32_t max_non
 		} catch (const std::exception & e) {
 			gpulog(LOG_WARNING, thr_id, "solver: %s", e.what());
 			free_equihash(thr_id);
-			usleep(500000);
+			usleep(250000);
 			return -1;
 		}
 
